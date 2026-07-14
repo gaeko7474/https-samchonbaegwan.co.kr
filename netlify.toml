@@ -1,6 +1,12 @@
 [build]
   publish = "."
 
+[[redirects]]
+  from = "https://www.samchonbaegwan.co.kr/*"
+  to = "https://samchonbaegwan.co.kr/:splat"
+  status = 301
+  force = true
+
 [[headers]]
   for = "/*"
   [headers.values]
