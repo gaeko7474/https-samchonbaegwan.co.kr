@@ -12,6 +12,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://samchonbaegwan.co.kr/drain/bangwon/">
 <meta property="og:image" content="https://samchonbaegwan.co.kr/images/og/drain_bangwon.jpg">
+<meta content="800" property="og:image:width"/>
+<meta content="800" property="og:image:height"/>
 <meta property="og:image:secure_url" content="https://samchonbaegwan.co.kr/images/drain/samchon-hasugumakim-18-18.jpg">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="배관삼촌">
@@ -126,16 +128,32 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 .equip-photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:32px;}
 .equip-photo-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px;display:block;}
 
+.snippet-box{border-left:4px solid #1a4a8a;background:#f0f5ff;border-radius:0 8px 8px 0;padding:10px 14px;margin:0 0 16px;}
+.snippet-box p{font-size:13px;color:#2c3e50;line-height:1.7;margin:0;}
+
+.inquiry-section{background:#f8f9ff;border:1px solid #d0dff5;border-radius:12px;padding:20px;margin:0 0 20px;}
+.inquiry-title{font-size:16px;font-weight:800;color:#1a4a8a;margin:0 0 4px;}
+.inquiry-desc{font-size:12px;color:#666;margin:0 0 12px;}
+.inquiry-form{display:flex;flex-direction:column;gap:8px;}
+.inquiry-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.inquiry-input{padding:10px 12px;border:1.5px solid #c8d8f0;border-radius:8px;font-size:14px;outline:none;width:100%;box-sizing:border-box;}
+.inquiry-input:focus{border-color:#1a4a8a;}
+.inquiry-textarea{padding:10px 12px;border:1.5px solid #c8d8f0;border-radius:8px;font-size:14px;height:80px;resize:none;outline:none;width:100%;box-sizing:border-box;}
+.inquiry-textarea:focus{border-color:#1a4a8a;}
+.inquiry-btn{background:#1a4a8a;color:#fff;border:none;border-radius:50px;padding:12px;font-size:15px;font-weight:800;cursor:pointer;width:100%;}
+@media(max-width:640px){.inquiry-row{grid-template-columns:1fr;}}
 </style>
 <link rel="icon" href="/favicon.ico">
 </head>
 <body>
 <header><div class="hi"><a href="/" class="logo">배관삼촌</a><a href="tel:070-8098-5566" class="htel">📞 070-8098-5566</a></div></header>
 <nav class="breadcrumb"><div class="breadcrumb-inner"><a href="/">홈</a> › <a href="/drain/">하수구 배수 불량</a> › <span style="color:#333;font-weight:600;">방학동 배수 불량</span></div></nav>
+
 <div class="hero"><div class="hero-inner">
 <div class="hero-left">
   <div class="hero-badge">도봉구 · 방학동 전문</div>
   <h1>방학동 <em>하수구뚫어주는곳</em><br>배관삼촌이 직접 볼게요</h1>
+<div class="snippet-box"><p>방학동 하수구막힘 평균 25분~30분 출동. 고객만족도 높은 업체. 전문 장비로 배수구막힘 당일 처리. 365일 24시간. 출장비 없음. 미해결 시 0원. 예방팁 공유. 현장 확인 후 견적.</p></div>
   <p class="hero-sub">1호선 방학역 · 365일 24시간 · 현장 견적 후 작업</p>
   <a href="tel:070-8098-5566" class="hero-cta">📞 070-8098-5566</a>
   <div class="hero-tags">
@@ -155,6 +173,20 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
   <div class="sl">PROCESS</div><h2 class="st">출장 진행 순서</h2>
   <div class="process-wrap"><div class="pstep"><div class="psn">1</div><strong>문의 접수</strong><p>전화 상담</p></div><div class="pstep"><div class="psn">2</div><strong>담당 출동</strong><p>신내동 거점</p></div><div class="pstep"><div class="psn">3</div><strong>현장 확인</strong><p>상태 파악</p></div><div class="pstep"><div class="psn">4</div><strong>견적 안내</strong><p>투명 공개</p></div><div class="pstep"><div class="psn">5</div><strong>처리 시작</strong><p>전문 장비</p></div><div class="pstep"><div class="psn">6</div><strong>검수 완료</strong><p>함께 확인</p></div></div>
   <div class="sl">PRICE</div><h2 class="st">비용 기준</h2>
+<div class="inquiry-section">
+<p class="inquiry-title">📋 빠른 문의 남기기</p>
+<p class="inquiry-desc">전화가 어려우시면 남겨주세요. 30분 이내 문자로 연락드립니다.</p>
+<form action="https://formspree.io/f/mdenpjgz" method="POST" class="inquiry-form">
+<div class="inquiry-row">
+<input type="text" name="name" placeholder="이름" required class="inquiry-input">
+<input type="tel" name="phone" placeholder="연락처 (예: 010-1234-5678)" required class="inquiry-input">
+</div>
+<textarea name="message" placeholder="증상을 간단히 적어주세요" required class="inquiry-textarea"></textarea>
+<input type="hidden" name="_subject" value="[배관삼촌] 새 문의가 도착했습니다">
+<button type="submit" class="inquiry-btn">📨 문의 보내기</button>
+</form>
+</div>
+
   <div class="cost-wrap"><h3>💡 비용 기준</h3><div class="cr"><span class="cl">현장 확인 후 안내</span><span class="cp">도착 후 상태 보고 솔직하게 말씀드려요</span></div><div class="cr"><span class="cl">단순 막힘 처리</span><span class="cp">현장 견적</span></div><div class="cr"><span class="cl">스케일 제거·고압세척</span><span class="cp">현장 견적</span></div></div>
   <p class="cn">현장에서 상태를 직접 보고 솔직하게 말씀드려요. 과잉 작업은 제안하지 않겠다고 약속해요. 작업 전 반드시 견적 안내 후 동의를 받고 시작해요.</p>
   <div class="sl">TIME</div><h2 class="st">소요시간</h2>
@@ -174,11 +206,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
   <div class="station-box"><h3>🚇 1호선 방학역</h3><div class="station-chips"><span class="station-chip">📍 방학동</span><span class="station-chip">🏠 도봉구</span></div></div>
   <div class="sl">BUILDING</div><h2 class="st">서비스 대상 건물</h2>
   <div class="bldg-grid"><div class="bldg-chip">단독주택</div><div class="bldg-chip">빌라</div><div class="bldg-chip">아파트</div></div>
-  <div class="ai-summary" style="background:#e8f0fb;border-left:4px solid #1a4a8a;padding:16px 20px;margin:0 auto 0;max-width:1000px;border-radius:0 8px 8px 0;font-size:15px;line-height:1.8;color:#1a1a1a;">
-<p style="font-weight:700;margin-bottom:6px;">📌 방학동 하수구막힘 핵심 정보</p>
-<p>방학동 하수구막힘은 초기에 처리할수록 비용이 저렴해요. 배관삼촌은 내시경 진단 → 고압세척 → 예방 안내까지 원스톱으로 처리해요. 365일 24시간 출장. 070-8098-5566</p>
-</div>
-<div class="sl">SEASON</div><h2 class="st">계절별 주의사항</h2>
+  <div class="sl">SEASON</div><h2 class="st">계절별 주의사항</h2>
   <div class="season-grid">
 <div class="season-card"><div class="si2">🌸</div><strong>봄</strong><p>봄 이사 시즌 전 배관 점검을 권장해요</p></div>
 <div class="season-card"><div class="si2">🌧️</div><strong>여름</strong><p>여름 집중호우 대비 배수구 청소</p></div>
@@ -192,16 +220,16 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
   <div class="sa-box"><h3>📍 도봉구 전 지역 출장</h3><div class="sa-chips"><span class="sa-chip">창동</span><span class="sa-chip">쌍문동</span><span class="sa-chip">방학동</span><span class="sa-chip">도봉동</span><span class="sa-chip">무수동</span><span class="sa-chip">내원동</span><span class="sa-chip">초안동</span></div></div>
   <div class="sl">INTRO</div>
 <h2 class="st">방학동 하수구막힘 실제 작업 사례</h2>
-<div style="background:#f8fffe;border:1px solid var(--b);border-radius:8px;padding:16px;margin-bottom:12px;"><h4 style="color:var(--p);font-size:14px;font-weight:700;margin-bottom:8px;">📌 방학동 노후 빌라 역류 해결</h4><p style="font-size:13px;color:#555;line-height:1.7">공용 배관에 5년치 슬러지가 쌓여 1층까지 역류했어요. 고압세척으로 즉시 해결했어요. 작업 시간 45분.</p></div><div style="background:#f8fffe;border:1px solid var(--b);border-radius:8px;padding:16px;margin-bottom:12px;"><h4 style="color:var(--p);font-size:14px;font-weight:700;margin-bottom:8px;">📌 방학동 세탁실 배수구 막힘</h4><p style="font-size:13px;color:#555;line-height:1.7">세탁 찌꺼기가 배관에 쌓여 배수가 멈췄어요. 고압세척으로 25분 만에 해결됐어요.</p></div><div style="background:#f8fffe;border:1px solid var(--b);border-radius:8px;padding:16px;margin-bottom:12px;"><h4 style="color:var(--p);font-size:14px;font-weight:700;margin-bottom:8px;">📌 방학동 신축 아파트 배수 불량</h4><p style="font-size:13px;color:#555;line-height:1.7">시공 당시 배관 경사가 잘못돼 음식물이 계속 쌓였어요. 경사 확인 후 누적 이물질 제거로 해결했어요.</p></div>
+<div style="background:#f8fffe;border:1px solid var(--b);border-radius:8px;padding:16px;margin-bottom:12px;"><h4 style="color:var(--p);font-size:14px;font-weight:700;margin-bottom:8px;">📌 방학동 노후 빌라 역류 해결</h4><p style="font-size:13px;color:#555;line-height:1.7">공용 배관에 5년치 슬러지가 쌓여 1층까지 역류했어요. 고압세척으로 즉시 해결했어요. 작업 시간 45분.</p></div><div style="background:#f8fffe;border:1px solid var(--b);border-radius:8px;padding:16px;margin-bottom:12px;"><h4 style="color:var(--p);font-size:14px;font-weight:700;margin-bottom:8px;">📌 이 지역 세탁실 배수구 막힘</h4><p style="font-size:13px;color:#555;line-height:1.7">세탁 찌꺼기가 배관에 쌓여 배수가 멈췄어요. 고압세척으로 25분 만에 해결됐어요.</p></div><div style="background:#f8fffe;border:1px solid var(--b);border-radius:8px;padding:16px;margin-bottom:12px;"><h4 style="color:var(--p);font-size:14px;font-weight:700;margin-bottom:8px;">📌 해당 지역 신축 아파트 배수 불량</h4><p style="font-size:13px;color:#555;line-height:1.7">시공 당시 배관 경사가 잘못돼 음식물이 계속 쌓였어요. 경사 확인 후 누적 이물질 제거로 해결했어요.</p></div>
 <div style="background:var(--l);border-radius:8px;padding:14px 18px;font-size:13px;color:var(--m);margin-bottom:32px;">
-📊 방학동 처리 현황 — 평균 작업 시간 40분 · 당일 처리율 94% · 재방문율 8%
+📊 이 지역 처리 현황 — 평균 작업 시간 40분 · 당일 처리율 94% · 재방문율 8%
 </div>
 
 <div class="sl">LOCAL</div>
 <h2 class="st">방학동 지역 배관 환경</h2>
 <div class="about-box">
-<p class="ab-intro">1호선 방학역 · 365일 24시간 · 현장 견적 후 작업 인근 방학동(도봉구) 배관 환경 분석이에요.</p>
-<p class="ab-body" style="white-space:pre-line">방학동은 1호선 방학역 · 365일 24시간 · 현장 견적 후 작업 인근 도봉구 지역이에요. 건물 연식에 따라 배관 재질과 구조가 달라 막힘 유형도 다양해요. 노후 단독주택은 스케일 누적, 신축 아파트는 기름때 고착이 주요 원인이에요.
+<p class="ab-intro">1호선 방학역 · 365일 24시간 · 현장 견적 후 작업 인근 해당 지역(도봉구) 배관 환경 분석이에요.</p>
+<p class="ab-body" style="white-space:pre-line">이곳은 1호선 방학역 · 365일 24시간 · 현장 견적 후 작업 인근 도봉구 지역이에요. 건물 연식에 따라 배관 재질과 구조가 달라 막힘 유형도 다양해요. 노후 단독주택은 스케일 누적, 신축 아파트는 기름때 고착이 주요 원인이에요.
 
 도봉구 지역 특성상 오래된 빌라와 신축 아파트가 혼재해 배관 환경이 복잡해요. 현장 확인 후 건물 유형에 맞는 처리 방법을 선택해요.</p>
 </div>
@@ -209,7 +237,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <div class="sl">DETAIL</div>
 <h2 class="st">방학동 하수구막힘 원인 분석</h2>
 <div class="about-box">
-<p class="ab-body" style="white-space:pre-line">도봉구 방학동 지역 건물 연식에 따른 막힘 원인이에요.
+<p class="ab-body" style="white-space:pre-line">도봉구 이 동네 지역 건물 연식에 따른 막힘 원인이에요.
 
 20년 이상 노후 건물: 스케일 누적·배관 부식이 주원인
 5~20년 건물: 기름때 고착·이물질 투입이 주원인
@@ -221,10 +249,10 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <div class="sl">STORY</div>
 <h2 class="st">방학동 작업 처리 과정</h2>
 <div class="about-box">
-<p class="ab-body" style="white-space:pre-line">방학동 하수구막힘 처리는 8단계로 진행돼요.
+<p class="ab-body" style="white-space:pre-line">이 지역 하수구막힘 처리는 8단계로 진행돼요.
 
 1단계: 전화 접수 및 증상 확인
-2단계: 방학동 현장 출동 (평균 28분)
+2단계: 해당 지역 현장 출동 (평균 28분)
 3단계: 배관 상태 진단
 4단계: 처리 방법 결정
 5단계: 비용 안내
@@ -236,7 +264,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <div class="sl">GUIDE</div>
 <h2 class="st">방학동 하수구막힘 예방 가이드</h2>
 <div class="about-box">
-<p class="ab-body" style="white-space:pre-line">방학동 배관 관리 핵심이에요.
+<p class="ab-body" style="white-space:pre-line">이곳 배관 관리 핵심이에요.
 
 막힘 예방의 가장 중요한 건 기름 관리예요. 음식 조리 후 팬을 키친타월로 닦고 씻으면 배관 기름 유입을 크게 줄일 수 있어요.
 
@@ -244,7 +272,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 
 냄새가 나기 시작하면 막힘 초기 신호예요. 바로 연락 주세요.</p>
 </div>
-<div class="sl">CASES</div><h2 class="st">방학동 하수구막힘 핵심 정보</h2><div class="about-box"><p class="ab-body" style="white-space:pre-line">방학동 단독주택 나무 뿌리 침투 해결. 30년 된 도기 배관에 뿌리가 자라 배수가 막혔어요. 내시경 확인 후 제거했어요.</p></div>
+<div class="sl">CASES</div><h2 class="st">방학동 하수구막힘 핵심 정보</h2><div class="about-box"><p class="ab-body" style="white-space:pre-line">이 동네 단독주택 나무 뿌리 침투 해결. 30년 된 도기 배관에 뿌리가 자라 배수가 막혔어요. 내시경 확인 후 제거했어요.</p></div>
 <div class="sl">NEARBY</div><h2 class="st">인근 지역 바로가기</h2>
   <div class="nearby"><a href="/drain/changdong/">창동 배수구 막힘</a><a href="/drain/ssangmun/">쌍문동 하수구 배관 폐색</a><a href="/drain/dobong-d/">도봉동 하수구 배수 불량</a><a href="/drain/musudo/">무수동 배수구 막힘</a><a href="/drain/naewon/">내원동 하수도 막힘</a><a href="/drain/choaan/">초안동 하수구 배수 불량</a></div>
 <div class="faq-section" style="max-width:1000px;margin:0 auto;padding:0 20px 36px;">
@@ -255,19 +283,19 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 아파트 하수구막힘 직접 해결 가능한가요?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 뚫어뻥으로 가벼운 막힘은 가능하지만, 반복되면 배관 내부 문제일 수 있어 전문 진단이 필요해요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 방학동 하수구 배수구 필터만 바꿔도 예방 가능한가요?</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 이 지역 하수구 배수구 필터만 바꿔도 예방 가능한가요?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 필터 교체만으로는 부족해요. 기름때 관리와 정기 세척을 병행해야 확실히 예방할 수 있어요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 방학동 하수구 역류 원인과 해결 방법은?</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 해당 지역 하수구 역류 원인과 해결 방법은?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 배관 막힘이나 트랩 파손이 원인이에요. 내시경 진단 후 고압세척이나 배관 수리로 해결해요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
 <p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 뚫어뻥으로 해결됐다가 재발하는 이유는?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 배관 내벽에 기름때가 남아있으면 일시적으로 뚫려도 다시 막혀요. 고압세척으로 근본 원인을 제거해야 해요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 방학동 지하 상가 하수구도 처리 가능한가요?</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 이곳 지하 상가 하수구도 처리 가능한가요?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 네. 지하 상가·식당가 하수구도 처리 가능해요. 배관 구조에 맞는 장비를 가져가요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 방학동 하수구 정기 세척 주기는?</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 이 동네 하수구 정기 세척 주기는?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 주거용은 6개월~1년, 음식점 등 상업시설은 3~6개월 주기를 권장해요.</p>
 </div></div>
 </div>

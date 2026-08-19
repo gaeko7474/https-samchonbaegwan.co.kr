@@ -12,6 +12,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://samchonbaegwan.co.kr/sink/jangan-d/">
 <meta property="og:image" content="https://samchonbaegwan.co.kr/images/og/sink_jangan-d.jpg">
+<meta content="800" property="og:image:width"/>
+<meta content="800" property="og:image:height"/>
 <meta property="og:image:secure_url" content="https://samchonbaegwan.co.kr/images/sink/samchon-sinkdaemakim-after-17.jpg">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="배관삼촌">
@@ -126,16 +128,32 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 .equip-photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:32px;}
 .equip-photo-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px;display:block;}
 
+.snippet-box{border-left:4px solid #1a4a8a;background:#f0f5ff;border-radius:0 8px 8px 0;padding:10px 14px;margin:0 0 16px;}
+.snippet-box p{font-size:13px;color:#2c3e50;line-height:1.7;margin:0;}
+
+.inquiry-section{background:#f8f9ff;border:1px solid #d0dff5;border-radius:12px;padding:20px;margin:0 0 20px;}
+.inquiry-title{font-size:16px;font-weight:800;color:#1a4a8a;margin:0 0 4px;}
+.inquiry-desc{font-size:12px;color:#666;margin:0 0 12px;}
+.inquiry-form{display:flex;flex-direction:column;gap:8px;}
+.inquiry-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.inquiry-input{padding:10px 12px;border:1.5px solid #c8d8f0;border-radius:8px;font-size:14px;outline:none;width:100%;box-sizing:border-box;}
+.inquiry-input:focus{border-color:#1a4a8a;}
+.inquiry-textarea{padding:10px 12px;border:1.5px solid #c8d8f0;border-radius:8px;font-size:14px;height:80px;resize:none;outline:none;width:100%;box-sizing:border-box;}
+.inquiry-textarea:focus{border-color:#1a4a8a;}
+.inquiry-btn{background:#1a4a8a;color:#fff;border:none;border-radius:50px;padding:12px;font-size:15px;font-weight:800;cursor:pointer;width:100%;}
+@media(max-width:640px){.inquiry-row{grid-template-columns:1fr;}}
 </style>
 <link rel="icon" href="/favicon.ico">
 </head>
 <body>
 <header><div class="hi"><a href="/" class="logo">배관삼촌</a><a href="tel:070-8098-5566" class="htel">📞 070-8098-5566</a></div></header>
 <nav class="breadcrumb"><div class="breadcrumb-inner"><a href="/">홈</a> › <a href="/sink/">싱크대 배수 지연</a> › <span style="color:#333;font-weight:600;">장안동 싱크대 역류</span></div></nav>
+
 <div class="hero"><div class="hero-inner">
 <div class="hero-left">
   <div class="hero-badge">동대문구 · 장안동 전문</div>
   <h1>장안동 <em>주방배관고압세척</em><br>배관삼촌이 직접 볼게요</h1>
+<div class="snippet-box"><p>장안동 싱크대막힘 즉시 출동. 싱크대 배수구막힘·기름때 전문 장비로 당일 해결. 365일 24시간, 출장비 없음. 간단 작업부터 진행. 미해결 시 0원. 예방팁 공유. 현장 확인 후 견적.</p></div>
   <p class="hero-sub">5호선 장한평역 · 365일 24시간 · 현장 견적 후 작업</p>
   <a href="tel:070-8098-5566" class="hero-cta">📞 070-8098-5566</a>
   <div class="hero-tags">
@@ -155,6 +173,20 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
   <div class="sl">PROCESS</div><h2 class="st">출장 진행 순서</h2>
   <div class="process-wrap"><div class="pstep"><div class="psn">1</div><strong>연락 접수</strong><p>증상 상담</p></div><div class="pstep"><div class="psn">2</div><strong>기사 배정</strong><p>최근접 기사</p></div><div class="pstep"><div class="psn">3</div><strong>현장 점검</strong><p>원인 파악</p></div><div class="pstep"><div class="psn">4</div><strong>비용 협의</strong><p>동의 후 시작</p></div><div class="pstep"><div class="psn">5</div><strong>처리 진행</strong><p>최적 방법</p></div><div class="pstep"><div class="psn">6</div><strong>사후 안내</strong><p>예방법 안내</p></div></div>
   <div class="sl">PRICE</div><h2 class="st">비용 기준</h2>
+<div class="inquiry-section">
+<p class="inquiry-title">📋 빠른 문의 남기기</p>
+<p class="inquiry-desc">전화가 어려우시면 남겨주세요. 30분 이내 문자로 연락드립니다.</p>
+<form action="https://formspree.io/f/mdenpjgz" method="POST" class="inquiry-form">
+<div class="inquiry-row">
+<input type="text" name="name" placeholder="이름" required class="inquiry-input">
+<input type="tel" name="phone" placeholder="연락처 (예: 010-1234-5678)" required class="inquiry-input">
+</div>
+<textarea name="message" placeholder="증상을 간단히 적어주세요" required class="inquiry-textarea"></textarea>
+<input type="hidden" name="_subject" value="[배관삼촌] 새 문의가 도착했습니다">
+<button type="submit" class="inquiry-btn">📨 문의 보내기</button>
+</form>
+</div>
+
   <div class="cost-wrap"><h3>💡 비용 기준</h3><div class="cr"><span class="cl">현장 확인 후 안내</span><span class="cp">도착 후 상태 보고 솔직하게 말씀드려요</span></div><div class="cr"><span class="cl">트랩 청소·기름때 제거</span><span class="cp">현장 견적</span></div><div class="cr"><span class="cl">고압세척 포함</span><span class="cp">현장 견적</span></div></div>
   <p class="cn">현장에서 상태를 직접 보고 솔직하게 말씀드려요. 과잉 작업은 제안하지 않겠다고 약속해요. 작업 전 반드시 견적 안내 후 동의를 받고 시작해요.</p>
   <div class="sl">TIME</div><h2 class="st">소요시간</h2>
@@ -174,11 +206,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
   <div class="station-box"><h3>🚇 5호선 장한평역</h3><div class="station-chips"><span class="station-chip">📍 장안동</span><span class="station-chip">🏠 동대문구</span></div></div>
   <div class="sl">BUILDING</div><h2 class="st">서비스 대상 건물</h2>
   <div class="bldg-grid"><div class="bldg-chip">빌라</div><div class="bldg-chip">단독주택</div><div class="bldg-chip">상가</div></div>
-  <div class="ai-summary" style="background:#e8f0fb;border-left:4px solid #1a4a8a;padding:16px 20px;margin:0 auto 0;max-width:1000px;border-radius:0 8px 8px 0;font-size:15px;line-height:1.8;color:#1a1a1a;">
-<p style="font-weight:700;margin-bottom:6px;">📌 장안동 싱크대막힘 핵심 정보</p>
-<p>장안동 싱크대 냄새와 배수 느림은 배관 막힘 초기 증상이에요. 배관삼촌은 현장 진단 후 비용 안내, 동의 후 작업해요. 365일 24시간. 070-8098-5566</p>
-</div>
-<div class="sl">SEASON</div><h2 class="st">계절별 주의사항</h2>
+  <div class="sl">SEASON</div><h2 class="st">계절별 주의사항</h2>
   <div class="season-grid">
 <div class="season-card"><div class="si2">🌸</div><strong>봄</strong><p>봄 황사 시즌 배수구 거름망 청소</p></div>
 <div class="season-card"><div class="si2">🌧️</div><strong>여름</strong><p>여름 장마 역류 대비 집수정 점검</p></div>
@@ -192,16 +220,16 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
   <div class="sa-box"><h3>📍 동대문구 전 지역 출장</h3><div class="sa-chips"><span class="sa-chip">이문동</span><span class="sa-chip">휘경동</span><span class="sa-chip">장안동</span><span class="sa-chip">답십리동</span><span class="sa-chip">청량리동</span><span class="sa-chip">제기동</span><span class="sa-chip">회기동</span><span class="sa-chip">전농동</span><span class="sa-chip">용두동</span><span class="sa-chip">신설동</span></div></div>
   <div class="sl">INTRO</div>
 <h2 class="st">장안동 싱크대막힘 실제 작업 사례</h2>
-<div style="background:#f8fffe;border:1px solid var(--b);border-radius:8px;padding:16px;margin-bottom:12px;"><h4 style="color:var(--p);font-size:14px;font-weight:700;margin-bottom:8px;">📌 장안동 씽크대 냄새 해결</h4><p style="font-size:13px;color:#555;line-height:1.7">트랩 내 오수 정체와 기름때 고착이 원인이었어요. 고압세척 후 냄새도 함께 사라졌어요.</p></div><div style="background:#f8fffe;border:1px solid var(--b);border-radius:8px;padding:16px;margin-bottom:12px;"><h4 style="color:var(--p);font-size:14px;font-weight:700;margin-bottom:8px;">📌 장안동 5년 무세척 배관 세척</h4><p style="font-size:13px;color:#555;line-height:1.7">5년 이상 세척하지 않은 배관이었어요. 고압세척 후 배수 속도가 3배 빨라졌어요.</p></div><div style="background:#f8fffe;border:1px solid var(--b);border-radius:8px;padding:16px;margin-bottom:12px;"><h4 style="color:var(--p);font-size:14px;font-weight:700;margin-bottom:8px;">📌 장안동 빌라 주방 역류 해결</h4><p style="font-size:13px;color:#555;line-height:1.7">기름때가 굳어 배수관이 완전히 막혔어요. 고압세척으로 배관 내벽까지 세척하고 25분 만에 정상화됐어요.</p></div>
+<div style="background:#f8fffe;border:1px solid var(--b);border-radius:8px;padding:16px;margin-bottom:12px;"><h4 style="color:var(--p);font-size:14px;font-weight:700;margin-bottom:8px;">📌 장안동 씽크대 냄새 해결</h4><p style="font-size:13px;color:#555;line-height:1.7">트랩 내 오수 정체와 기름때 고착이 원인이었어요. 고압세척 후 냄새도 함께 사라졌어요.</p></div><div style="background:#f8fffe;border:1px solid var(--b);border-radius:8px;padding:16px;margin-bottom:12px;"><h4 style="color:var(--p);font-size:14px;font-weight:700;margin-bottom:8px;">📌 이 지역 5년 무세척 배관 세척</h4><p style="font-size:13px;color:#555;line-height:1.7">5년 이상 세척하지 않은 배관이었어요. 고압세척 후 배수 속도가 3배 빨라졌어요.</p></div><div style="background:#f8fffe;border:1px solid var(--b);border-radius:8px;padding:16px;margin-bottom:12px;"><h4 style="color:var(--p);font-size:14px;font-weight:700;margin-bottom:8px;">📌 해당 지역 빌라 주방 역류 해결</h4><p style="font-size:13px;color:#555;line-height:1.7">기름때가 굳어 배수관이 완전히 막혔어요. 고압세척으로 배관 내벽까지 세척하고 25분 만에 정상화됐어요.</p></div>
 <div style="background:var(--l);border-radius:8px;padding:14px 18px;font-size:13px;color:var(--m);margin-bottom:32px;">
-📊 장안동 처리 현황 — 평균 작업 시간 40분 · 당일 처리율 94% · 재방문율 8%
+📊 이 지역 처리 현황 — 평균 작업 시간 40분 · 당일 처리율 94% · 재방문율 8%
 </div>
 
 <div class="sl">LOCAL</div>
 <h2 class="st">장안동 지역 배관 환경</h2>
 <div class="about-box">
-<p class="ab-intro">5호선 장한평역 · 365일 24시간 · 현장 견적 후 작업 인근 장안동(동대문구) 배관 환경 분석이에요.</p>
-<p class="ab-body" style="white-space:pre-line">동대문구 장안동에서 싱크대막힘이 발생하는 패턴을 보면, 기름때 고착이 70%, 음식물 찌꺼기 누적이 20%, 트랩 노화가 10%예요.
+<p class="ab-intro">5호선 장한평역 · 365일 24시간 · 현장 견적 후 작업 인근 해당 지역(동대문구) 배관 환경 분석이에요.</p>
+<p class="ab-body" style="white-space:pre-line">동대문구 이곳에서 싱크대막힘이 발생하는 패턴을 보면, 기름때 고착이 70%, 음식물 찌꺼기 누적이 20%, 트랩 노화가 10%예요.
 
 기름때 고착은 고압세척이 근본 해결책이에요. 단순 뚫기로는 재발이 반복돼요.</p>
 </div>
@@ -209,7 +237,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <div class="sl">DETAIL</div>
 <h2 class="st">장안동 싱크대막힘 원인 분석</h2>
 <div class="about-box">
-<p class="ab-body" style="white-space:pre-line">장안동 싱크대막힘 원인 분석이에요.
+<p class="ab-body" style="white-space:pre-line">이 동네 싱크대막힘 원인 분석이에요.
 
 ① 기름때 고착 (전체의 70%) — 고압세척으로 해결
 ② 음식물 찌꺼기 (20%) — 트랩 세척·교체
@@ -222,10 +250,10 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <div class="sl">STORY</div>
 <h2 class="st">장안동 작업 처리 과정</h2>
 <div class="about-box">
-<p class="ab-body" style="white-space:pre-line">장안동 싱크대막힘 처리는 이렇게 진행돼요.
+<p class="ab-body" style="white-space:pre-line">이 지역 싱크대막힘 처리는 이렇게 진행돼요.
 
 1단계: 전화로 증상 파악 (역류 여부·냄새 여부)
-2단계: 장안동 현장 출동 (평균 28분)
+2단계: 해당 지역 현장 출동 (평균 28분)
 3단계: 트랩 상태 확인
 4단계: 처리 방법 결정 (트랩 교체 or 고압세척)
 5단계: 비용 안내
@@ -236,7 +264,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <div class="sl">GUIDE</div>
 <h2 class="st">장안동 싱크대막힘 예방 가이드</h2>
 <div class="about-box">
-<p class="ab-body" style="white-space:pre-line">장안동 싱크대막힘 예방 방법이에요.
+<p class="ab-body" style="white-space:pre-line">이곳 싱크대막힘 예방 방법이에요.
 
 ① 음식물 기름을 배수구에 직접 버리지 마세요
 ② 설거지 후 뜨거운 물을 1~2분 흘려보내세요
@@ -245,7 +273,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 
 초기 증상에서 처리할수록 비용이 훨씬 저렴해요.</p>
 </div>
-<div class="sl">CASES</div><h2 class="st">장안동 싱크대막힘 핵심 정보</h2><div class="about-box"><p class="ab-body" style="white-space:pre-line">장안동 20년 차 빌라 싱크대 완전 폐색. 기름때가 굳어 내경이 절반으로 줄었어요. 고압세척으로 25분 만에 정상화했어요.</p></div>
+<div class="sl">CASES</div><h2 class="st">장안동 싱크대막힘 핵심 정보</h2><div class="about-box"><p class="ab-body" style="white-space:pre-line">이 동네 20년 차 빌라 싱크대 완전 폐색. 기름때가 굳어 내경이 절반으로 줄었어요. 고압세척으로 25분 만에 정상화했어요.</p></div>
 <div class="sl">NEARBY</div><h2 class="st">인근 지역 바로가기</h2>
   <div class="nearby"><a href="/sink/imun/">이문동 싱크대 배수구 막힘</a><a href="/sink/hwegyeong/">휘경동 주방 배관 폐색</a><a href="/sink/dapsimni/">답십리동 주방 하수구 막힘</a><a href="/sink/cheongnyangni/">청량리동 싱크대 배수구 막힘</a><a href="/sink/jegi/">제기동 싱크대 배수 지연</a><a href="/sink/hoegi/">회기동 싱크대 배관 막힘</a><a href="/sink/jeonong/">전농동 싱크대 배수 지연</a><a href="/sink/yongdu/">용두동 주방 배수 불량</a></div>
 <div class="faq-section" style="max-width:1000px;margin:0 auto;padding:0 20px 36px;">
@@ -256,10 +284,10 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 디스포저(음식물 분쇄기) 막힘도 처리 가능한가요?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 네. 디스포저 연결 배관 막힘도 처리 가능해요. 분쇄기 고장은 별도 점검이 필요해요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 장안동 싱크대 막힘 출장비가 따로 있나요?</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 이 지역 싱크대 막힘 출장비가 따로 있나요?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 출장비와 작업비를 포함해 견적을 안내드려요. 현장 진단 후 동의 없이 추가 비용은 없어요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 장안동 싱크대 배수구 냄새 원인은?</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 해당 지역 싱크대 배수구 냄새 원인은?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 트랩 안 음식물 부패나 배관 내부 오염이 원인이에요. 세척과 트랩 교체로 해결돼요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
 <p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 야간·주말에도 싱크대 수리 출장 되나요?</p>
@@ -268,7 +296,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 싱크대 배수 트랩은 직접 교체 가능한가요?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 간단한 S트랩은 직접 교체 가능해요. 벽체 배관 연결 부분은 전문가 작업이 안전해요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 장안동 싱크대 세척 후 재발 보증이 있나요?</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 이곳 싱크대 세척 후 재발 보증이 있나요?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 작업 내용에 따라 보증 기간이 달라요. 작업 완료 시 안내드려요.</p>
 </div></div>
 </div>

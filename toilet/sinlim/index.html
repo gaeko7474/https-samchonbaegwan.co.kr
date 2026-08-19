@@ -12,6 +12,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://samchonbaegwan.co.kr/toilet/sinlim/">
 <meta property="og:image" content="https://samchonbaegwan.co.kr/images/og/toilet_sinlim.jpg">
+<meta content="800" property="og:image:width"/>
+<meta content="800" property="og:image:height"/>
 <meta property="og:image:secure_url" content="https://samchonbaegwan.co.kr/images/toilet/samchon-byeongimakim-after-11.jpg">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="배관삼촌">
@@ -126,16 +128,32 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 .equip-photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:32px;}
 .equip-photo-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px;display:block;}
 
+.snippet-box{border-left:4px solid #1a4a8a;background:#f0f5ff;border-radius:0 8px 8px 0;padding:10px 14px;margin:0 0 16px;}
+.snippet-box p{font-size:13px;color:#2c3e50;line-height:1.7;margin:0;}
+
+.inquiry-section{background:#f8f9ff;border:1px solid #d0dff5;border-radius:12px;padding:20px;margin:0 0 20px;}
+.inquiry-title{font-size:16px;font-weight:800;color:#1a4a8a;margin:0 0 4px;}
+.inquiry-desc{font-size:12px;color:#666;margin:0 0 12px;}
+.inquiry-form{display:flex;flex-direction:column;gap:8px;}
+.inquiry-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.inquiry-input{padding:10px 12px;border:1.5px solid #c8d8f0;border-radius:8px;font-size:14px;outline:none;width:100%;box-sizing:border-box;}
+.inquiry-input:focus{border-color:#1a4a8a;}
+.inquiry-textarea{padding:10px 12px;border:1.5px solid #c8d8f0;border-radius:8px;font-size:14px;height:80px;resize:none;outline:none;width:100%;box-sizing:border-box;}
+.inquiry-textarea:focus{border-color:#1a4a8a;}
+.inquiry-btn{background:#1a4a8a;color:#fff;border:none;border-radius:50px;padding:12px;font-size:15px;font-weight:800;cursor:pointer;width:100%;}
+@media(max-width:640px){.inquiry-row{grid-template-columns:1fr;}}
 </style>
 <link rel="icon" href="/favicon.ico">
 </head>
 <body>
 <header><div class="hi"><a href="/" class="logo">배관삼촌</a><a href="tel:070-8098-5566" class="htel">📞 070-8098-5566</a></div></header>
 <nav class="breadcrumb"><div class="breadcrumb-inner"><a href="/">홈</a> › <a href="/toilet/">변기 역류</a> › <span style="color:#333;font-weight:600;">신내동 변기 물 안내려감</span></div></nav>
+
 <div class="hero"><div class="hero-inner">
 <div class="hero-left">
   <div class="hero-badge">중랑구 · 신내동 전문</div>
   <h1>신내동 <em>변기막힘즉시</em><br>배관삼촌이 직접 볼게요</h1>
+<div class="snippet-box"><p>신내동 변기막힘 365일 24시간 즉시 출동. 라이터·이물질 변기막혔을때 실력 좋은 전문가 처리. 출장비 없음. 예방팁 공유. 간단 작업부터 진행. 빠른 현장 대응. 현장 확인 후 견적.</p></div>
   <p class="hero-sub">경춘선 신내역·망우역 · 365일 24시간 · 현장 견적 후 작업</p>
   <a href="tel:070-8098-5566" class="hero-cta">📞 070-8098-5566</a>
   <div class="hero-tags">
@@ -155,6 +173,20 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
   <div class="sl">PROCESS</div><h2 class="st">출장 진행 순서</h2>
   <div class="process-wrap"><div class="pstep"><div class="psn">1</div><strong>문의 접수</strong><p>전화 상담</p></div><div class="pstep"><div class="psn">2</div><strong>담당 출동</strong><p>신내동 거점</p></div><div class="pstep"><div class="psn">3</div><strong>현장 확인</strong><p>상태 파악</p></div><div class="pstep"><div class="psn">4</div><strong>견적 안내</strong><p>투명 공개</p></div><div class="pstep"><div class="psn">5</div><strong>처리 시작</strong><p>전문 장비</p></div><div class="pstep"><div class="psn">6</div><strong>검수 완료</strong><p>함께 확인</p></div></div>
   <div class="sl">PRICE</div><h2 class="st">비용 기준</h2>
+<div class="inquiry-section">
+<p class="inquiry-title">📋 빠른 문의 남기기</p>
+<p class="inquiry-desc">전화가 어려우시면 남겨주세요. 30분 이내 문자로 연락드립니다.</p>
+<form action="https://formspree.io/f/mdenpjgz" method="POST" class="inquiry-form">
+<div class="inquiry-row">
+<input type="text" name="name" placeholder="이름" required class="inquiry-input">
+<input type="tel" name="phone" placeholder="연락처 (예: 010-1234-5678)" required class="inquiry-input">
+</div>
+<textarea name="message" placeholder="증상을 간단히 적어주세요" required class="inquiry-textarea"></textarea>
+<input type="hidden" name="_subject" value="[배관삼촌] 새 문의가 도착했습니다">
+<button type="submit" class="inquiry-btn">📨 문의 보내기</button>
+</form>
+</div>
+
   <div class="cost-wrap"><h3>💡 비용 기준</h3><div class="cr"><span class="cl">현장 확인 후 안내</span><span class="cp">도착 후 상태 보고 솔직하게 말씀드려요</span></div><div class="cr"><span class="cl">이물질 제거</span><span class="cp">현장 견적</span></div><div class="cr"><span class="cl">탈거 포함</span><span class="cp">현장 견적</span></div></div>
   <p class="cn">현장에서 상태를 직접 보고 솔직하게 말씀드려요. 과잉 작업은 제안하지 않겠다고 약속해요. 작업 전 반드시 견적 안내 후 동의를 받고 시작해요.</p>
   <div class="sl">TIME</div><h2 class="st">소요시간</h2>
@@ -168,11 +200,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <div class="sl">AREA</div><h2 class="st">신내동 지역 특성</h2><div class="about-box"><p class="ab-body">신림동은 2호선 신림역·봉천역 역세권으로 학생·직장인 원룸과 오래된 다가구가 혼재합니다. 난곡로 변 구도심은 40년 이상 된 주철 배관도 다수 있어 세척 전 내시경 진단이 권장됩니다. 신림 뉴타운 재개발 구역은 이주 공실 배관 방치 후 굳은 슬러지 막힘 사례가 많습니다.</p></div>
 <div class="sl">BUILDING</div><h2 class="st">서비스 대상 건물</h2>
   <div class="bldg-grid"><div class="bldg-chip">아파트</div><div class="bldg-chip">빌라</div><div class="bldg-chip">다가구</div></div>
-  <div class="ai-summary" style="background:#e8f0fb;border-left:4px solid #1a4a8a;padding:16px 20px;margin:0 auto 0;max-width:1000px;border-radius:0 8px 8px 0;font-size:15px;line-height:1.8;color:#1a1a1a;">
-<p style="font-weight:700;margin-bottom:6px;">📌 신내동 변기막힘 핵심 정보</p>
-<p>신내동 변기 배수 불량은 휴지 과다·이물질·배관 노후가 원인이에요. 배관삼촌은 진단 후 비용 안내, 동의 후 작업해요. 365일 24시간. 070-8098-5566</p>
-</div>
-<div class="sl">SEASON</div><h2 class="st">계절별 주의사항</h2>
+  <div class="sl">SEASON</div><h2 class="st">계절별 주의사항</h2>
   <div class="season-grid">
 <div class="season-card"><div class="si2">🌸</div><strong>봄</strong><p>봄 신학기 입주 후 배관 점검</p></div>
 <div class="season-card"><div class="si2">🌧️</div><strong>여름</strong><p>여름 에어컨 배수 연결 상태 확인</p></div>
@@ -193,13 +221,13 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <div class="about-box">
 <p class="ab-body" style="white-space:pre-line">경춘선 신내역·망우역 · 365일 24시간 · 현장 견적 후 작업 인근 신내동(중랑구) 지역 변기막힘 문의에서 가장 많은 원인은 물티슈예요. 물티슈는 물에 녹지 않아 배관 굴곡부에 걸리면 빠르게 완전 폐색을 만들어요.
 
-신내동에서 변기막힘 케이스 대부분은 내시경 확인 후 물리적 제거로 해결돼요.</p>
+이 지역에서 변기막힘 케이스 대부분은 내시경 확인 후 물리적 제거로 해결돼요.</p>
 </div>
 
 <div class="sl">DETAIL</div>
 <h2 class="st">신내동 변기막힘 원인 분석</h2>
 <div class="about-box">
-<p class="ab-body" style="white-space:pre-line">신내동에서 변기막힘이 반복된다면 배관 경사 불량 또는 노후 변기 코팅 손상이 원인일 수 있어요.
+<p class="ab-body" style="white-space:pre-line">해당 지역에서 변기막힘이 반복된다면 배관 경사 불량 또는 노후 변기 코팅 손상이 원인일 수 있어요.
 
 경사가 잘못된 배관은 종이가 정상보다 빨리 뭉쳐요. 노후 변기는 내부 코팅이 벗겨져 이물질이 달라붙기 쉬워요.
 
@@ -209,11 +237,11 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <div class="sl">STORY</div>
 <h2 class="st">신내동 변기막힘 처리 과정</h2>
 <div class="about-box">
-<p class="ab-body" style="white-space:pre-line">신내동 변기막힘 처리는 이렇게 진행돼요.
+<p class="ab-body" style="white-space:pre-line">이 지역 변기막힘 처리는 이렇게 진행돼요.
 
 1단계: 전화로 증상 파악 (역류 여부·이물질 투입 여부)
 2단계: 물 사용 중지 안내
-3단계: 신내동 현장 출동 (평균 28분)
+3단계: 해당 지역 현장 출동 (평균 28분)
 4단계: 내시경으로 이물질 위치 확인
 5단계: 비용 안내
 6단계: 동의 후 작업
@@ -223,7 +251,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <div class="sl">GUIDE</div>
 <h2 class="st">신내동 변기막힘 예방 가이드</h2>
 <div class="about-box">
-<p class="ab-body" style="white-space:pre-line">신내동 화장실 관리 핵심이에요.
+<p class="ab-body" style="white-space:pre-line">이곳 화장실 관리 핵심이에요.
 
 변기에는 대소변과 전용 화장지만 버려야 해요.
 
@@ -235,11 +263,11 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 
 이것만 지키면 변기막힘의 70%를 예방할 수 있어요.</p>
 </div>
-<div class="sl">CASES</div><h2 class="st">신내동 변기막힘 핵심 정보</h2><div class="about-box"><p class="ab-body" style="white-space:pre-line">신내동 변기막힘 발생 원인
+<div class="sl">CASES</div><h2 class="st">신내동 변기막힘 핵심 정보</h2><div class="about-box"><p class="ab-body" style="white-space:pre-line">이 동네 변기막힘 발생 원인
 
 ① 물티슈 투입 (50%) ② 이물질 낙하 (25%) ③ 휴지 과다 (15%) ④ 배관 경사 불량 (10%)
 
-신내동에서 변기 물이 천천히 내려가면 즉시 처리하세요.</p></div>
+이 지역에서 변기 물이 천천히 내려가면 즉시 처리하세요.</p></div>
 <div class="sl">NEARBY</div><h2 class="st">인근 지역 바로가기</h2>
   <div class="nearby"><a href="/toilet/mukdong/">묵동 변기 역류</a><a href="/toilet/myeonmok/">면목동 변기 물 안내려감</a><a href="/toilet/mangwoo/">망우동 양변기 막힘</a><a href="/toilet/junghwa/">중화동 변기 배수 지연</a><a href="/toilet/sangbong/">상봉동 변기 배관 폐색</a></div>
 <div class="faq-section" style="max-width:1000px;margin:0 auto;padding:0 20px 36px;">
@@ -247,10 +275,10 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <h2 class="st">신내동 변기막힘 자주 묻는 질문</h2>
 <div style="background:#fff;border:1px solid #FFD9B3;border-radius:12px;padding:4px 20px;">
 <div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 신내동 변기막힘, 왜 자꾸 반복되나요?</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 해당 지역 변기막힘, 왜 자꾸 반복되나요?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 배관 내부 스케일 누적이나 구조적 문제일 수 있어요. 내시경 진단으로 정확한 원인을 확인해야 해요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 신내동 아파트 변기 공용 배관 막힘도 처리되나요?</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 이곳 아파트 변기 공용 배관 막힘도 처리되나요?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 공용 배관 막힘은 관리사무소 협조가 필요할 수 있어요. 탐지 후 안내드려요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
 <p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 변기 뚫기 작업 시간은 얼마나 걸리나요?</p>
@@ -262,7 +290,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 변기 막힘 예방하는 방법은?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 휴지 적정량 사용, 이물질 투입 금지, 정기 배관 세척을 권장해요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 신내동 상업시설 변기도 처리 가능한가요?</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 이 동네 상업시설 변기도 처리 가능한가요?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 네. 사무실·음식점·상가 변기 막힘도 전문 장비로 처리해요.</p>
 </div></div>
 </div>

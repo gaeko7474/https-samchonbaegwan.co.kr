@@ -12,6 +12,8 @@
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://samchonbaegwan.co.kr/drain/sangil/">
 <meta property="og:image" content="https://samchonbaegwan.co.kr/images/og/drain_sangil.jpg">
+<meta content="800" property="og:image:width"/>
+<meta content="800" property="og:image:height"/>
 <meta property="og:image:secure_url" content="https://samchonbaegwan.co.kr/images/drain/samchon-hasugumakim-18-18.jpg">
 <meta property="og:locale" content="ko_KR">
 <meta property="og:site_name" content="배관삼촌">
@@ -126,16 +128,32 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 .equip-photo-grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(120px,1fr));gap:8px;margin-bottom:32px;}
 .equip-photo-grid img{width:100%;aspect-ratio:1/1;object-fit:cover;border-radius:8px;display:block;}
 
+.snippet-box{border-left:4px solid #1a4a8a;background:#f0f5ff;border-radius:0 8px 8px 0;padding:10px 14px;margin:0 0 16px;}
+.snippet-box p{font-size:13px;color:#2c3e50;line-height:1.7;margin:0;}
+
+.inquiry-section{background:#f8f9ff;border:1px solid #d0dff5;border-radius:12px;padding:20px;margin:0 0 20px;}
+.inquiry-title{font-size:16px;font-weight:800;color:#1a4a8a;margin:0 0 4px;}
+.inquiry-desc{font-size:12px;color:#666;margin:0 0 12px;}
+.inquiry-form{display:flex;flex-direction:column;gap:8px;}
+.inquiry-row{display:grid;grid-template-columns:1fr 1fr;gap:8px;}
+.inquiry-input{padding:10px 12px;border:1.5px solid #c8d8f0;border-radius:8px;font-size:14px;outline:none;width:100%;box-sizing:border-box;}
+.inquiry-input:focus{border-color:#1a4a8a;}
+.inquiry-textarea{padding:10px 12px;border:1.5px solid #c8d8f0;border-radius:8px;font-size:14px;height:80px;resize:none;outline:none;width:100%;box-sizing:border-box;}
+.inquiry-textarea:focus{border-color:#1a4a8a;}
+.inquiry-btn{background:#1a4a8a;color:#fff;border:none;border-radius:50px;padding:12px;font-size:15px;font-weight:800;cursor:pointer;width:100%;}
+@media(max-width:640px){.inquiry-row{grid-template-columns:1fr;}}
 </style>
 <link rel="icon" href="/favicon.ico">
 </head>
 <body>
 <header><div class="hi"><a href="/" class="logo">배관삼촌</a><a href="tel:070-8098-5566" class="htel">📞 070-8098-5566</a></div></header>
 <nav class="breadcrumb"><div class="breadcrumb-inner"><a href="/">홈</a> › <a href="/drain/">배수관 막힘</a> › <span style="color:#333;font-weight:600;">상일동 하수구 배관 폐색</span></div></nav>
+
 <div class="hero"><div class="hero-inner">
 <div class="hero-left">
   <div class="hero-badge">강동구 · 상일동 전문</div>
   <h1>상일동 <em>음식물하수구막힘</em><br>배관삼촌이 직접 볼게요</h1>
+<div class="snippet-box"><p>상일동 욕실·업장 배관막힘 실력 좋은 전문가 평균 30분 출동. 출장비 없음. 하수구역류·배수구막힘 당일 처리. 예방팁 공유. 365일 24시간. 간단 작업부터 진행. 신속 대응. 현장 견적.</p></div>
   <p class="hero-sub">5호선 상일동역 · 365일 24시간 · 현장 견적 후 작업</p>
   <a href="tel:070-8098-5566" class="hero-cta">📞 070-8098-5566</a>
   <div class="hero-tags">
@@ -155,6 +173,20 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
   <div class="sl">PROCESS</div><h2 class="st">출장 진행 순서</h2>
   <div class="process-wrap"><div class="pstep"><div class="psn">1</div><strong>문의 접수</strong><p>전화 상담</p></div><div class="pstep"><div class="psn">2</div><strong>담당 출동</strong><p>신내동 거점</p></div><div class="pstep"><div class="psn">3</div><strong>현장 확인</strong><p>상태 파악</p></div><div class="pstep"><div class="psn">4</div><strong>견적 안내</strong><p>투명 공개</p></div><div class="pstep"><div class="psn">5</div><strong>처리 시작</strong><p>전문 장비</p></div><div class="pstep"><div class="psn">6</div><strong>검수 완료</strong><p>함께 확인</p></div></div>
   <div class="sl">PRICE</div><h2 class="st">비용 기준</h2>
+<div class="inquiry-section">
+<p class="inquiry-title">📋 빠른 문의 남기기</p>
+<p class="inquiry-desc">전화가 어려우시면 남겨주세요. 30분 이내 문자로 연락드립니다.</p>
+<form action="https://formspree.io/f/mdenpjgz" method="POST" class="inquiry-form">
+<div class="inquiry-row">
+<input type="text" name="name" placeholder="이름" required class="inquiry-input">
+<input type="tel" name="phone" placeholder="연락처 (예: 010-1234-5678)" required class="inquiry-input">
+</div>
+<textarea name="message" placeholder="증상을 간단히 적어주세요" required class="inquiry-textarea"></textarea>
+<input type="hidden" name="_subject" value="[배관삼촌] 새 문의가 도착했습니다">
+<button type="submit" class="inquiry-btn">📨 문의 보내기</button>
+</form>
+</div>
+
   <div class="cost-wrap"><h3>💡 비용 기준</h3><div class="cr"><span class="cl">현장 확인 후 안내</span><span class="cp">도착 후 상태 보고 솔직하게 말씀드려요</span></div><div class="cr"><span class="cl">단순 막힘 처리</span><span class="cp">현장 견적</span></div><div class="cr"><span class="cl">스케일 제거·고압세척</span><span class="cp">현장 견적</span></div></div>
   <p class="cn">현장에서 상태를 직접 보고 솔직하게 말씀드려요. 과잉 작업은 제안하지 않겠다고 약속해요. 작업 전 반드시 견적 안내 후 동의를 받고 시작해요.</p>
   <div class="sl">TIME</div><h2 class="st">소요시간</h2>
@@ -174,11 +206,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
   <div class="station-box"><h3>🚇 5호선 상일동역</h3><div class="station-chips"><span class="station-chip">📍 상일동</span><span class="station-chip">🏠 강동구</span></div></div>
   <div class="sl">BUILDING</div><h2 class="st">서비스 대상 건물</h2>
   <div class="bldg-grid"><div class="bldg-chip">아파트</div></div>
-  <div class="ai-summary" style="background:#e8f0fb;border-left:4px solid #1a4a8a;padding:16px 20px;margin:0 auto 0;max-width:1000px;border-radius:0 8px 8px 0;font-size:15px;line-height:1.8;color:#1a1a1a;">
-<p style="font-weight:700;margin-bottom:6px;">📌 상일동 하수구막힘 핵심 정보</p>
-<p>상일동 배수구 막힘의 주요 원인은 기름때 고착과 이물질이에요. 배관삼촌은 고압세척 전문 장비로 근본 원인을 제거해요. 현장 진단 후 견적. 070-8098-5566</p>
-</div>
-<div class="sl">SEASON</div><h2 class="st">계절별 주의사항</h2>
+  <div class="sl">SEASON</div><h2 class="st">계절별 주의사항</h2>
   <div class="season-grid">
 <div class="season-card"><div class="si2">🌸</div><strong>봄</strong><p>봄 신학기 입주 후 배관 점검</p></div>
 <div class="season-card"><div class="si2">🌧️</div><strong>여름</strong><p>여름 에어컨 배수 연결 상태 확인</p></div>
@@ -189,12 +217,12 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
   <div class="tip-box">집수정이 있는 건물은 연 2회 정기 청소를 권장합니다. 방치하면 배관 전체에 영향을 줘요.</div>
   
   <div class="sl">SERVICE AREA</div><h2 class="st">강동구 서비스 지역</h2>
-  <div class="sa-box"><h3>📍 강동구 전 지역 출장</h3><div class="sa-chips"><span class="sa-chip">암사동</span><span class="sa-chip">성내동</span><span class="sa-chip">천호동</span><span class="sa-chip">길동</span><span class="sa-chip">둔촌동</span><span class="sa-chip">명일동</span><span class="sa-chip">고덕동</span><span class="sa-chip">상일동</span><span class="sa-chip">강일동</span><span class="sa-chip">풍납동</span></div></div>
+  <div class="sa-box"><h3>📍 강동구 전 지역 출장</h3><div class="sa-chips"><span class="sa-chip">암사동</span><span class="sa-chip">성내동</span><span class="sa-chip">천호동</span><span class="sa-chip">길동</span><span class="sa-chip">둔촌동</span><span class="sa-chip">명일동</span><span class="sa-chip">고덕동</span><span class="sa-chip">이 지역</span><span class="sa-chip">강일동</span><span class="sa-chip">풍납동</span></div></div>
   <div class="sl">INTRO</div>
 <h2 class="st">상일동 하수구막힘 발생 원인</h2>
 <div class="about-box">
-<p class="ab-intro">📋 상일동(강동구)에서 하수구막힘이 발생하는 이유를 정리했어요.</p>
-<p class="ab-body" style="white-space:pre-line">상일동 하수구막힘이 발생하는 이유는 크게 4가지예요.
+<p class="ab-intro">📋 해당 지역(강동구)에서 하수구막힘이 발생하는 이유를 정리했어요.</p>
+<p class="ab-body" style="white-space:pre-line">이 지역 하수구막힘이 발생하는 이유는 크게 4가지예요.
 
 첫째, 기름때 고착이에요. 주방·욕실 배수구로 유입된 기름이 배관 내벽에 달라붙어 굳으면 내경이 점점 좁아져요. 장기간 방치하면 완전 폐색으로 이어져요.
 
@@ -208,7 +236,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <div class="sl">LOCAL</div>
 <h2 class="st">상일동 이런 증상이 있나요?</h2>
 <div class="about-box">
-<p class="ab-body" style="white-space:pre-line">상일동에서 이런 증상이 있다면 즉시 점검을 받으세요.
+<p class="ab-body" style="white-space:pre-line">해당 지역에서 이런 증상이 있다면 즉시 점검을 받으세요.
 
 ✔ 싱크대·욕실 배수가 느려지기 시작했어요
 ✔ 배수구에서 냄새가 올라와요
@@ -222,15 +250,15 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <div class="sl">DETAIL</div>
 <h2 class="st">상일동 하수구막힘 지역 환경 분석</h2>
 <div class="about-box">
-<p class="ab-body" style="white-space:pre-line">5호선 상일동역 · 365일 24시간 · 현장 견적 후 작업 인근 상일동은 강동구의 주요 주거 지역이에요. 다양한 연식의 건물이 밀집해 있어 배관 트러블 유형도 제각각이에요.
+<p class="ab-body" style="white-space:pre-line">5호선 이곳역 · 365일 24시간 · 현장 견적 후 작업 인근 이 동네은 강동구의 주요 주거 지역이에요. 다양한 연식의 건물이 밀집해 있어 배관 트러블 유형도 제각각이에요.
 
-배관삼촌은 상일동 지역 배관 환경을 파악하고 있어요. 현장 도착 전부터 어느 정도 원인 예측이 가능해 더 빠르게 처리해요.</p>
+배관삼촌은 이 지역 지역 배관 환경을 파악하고 있어요. 현장 도착 전부터 어느 정도 원인 예측이 가능해 더 빠르게 처리해요.</p>
 </div>
 
 <div class="sl">STORY</div>
 <h2 class="st">상일동 하수구막힘 처리 과정</h2>
 <div class="about-box">
-<p class="ab-body" style="white-space:pre-line">상일동에서 하수구막힘 연락이 오면 먼저 전화로 증상을 파악해요. 역류 여부, 냄새 여부, 막힘 정도에 따라 준비물이 달라요.
+<p class="ab-body" style="white-space:pre-line">해당 지역에서 하수구막힘 연락이 오면 먼저 전화로 증상을 파악해요. 역류 여부, 냄새 여부, 막힘 정도에 따라 준비물이 달라요.
 
 현장 도착 후 배관 상태를 진단하고 처리 방법을 결정해요. 비용을 안내드리고 동의 후 작업을 시작해요. 완료 후 배수 테스트와 재발 예방 방법을 안내드려요.</p>
 </div>
@@ -238,7 +266,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <div class="sl">GUIDE</div>
 <h2 class="st">상일동 하수구막힘 예방 가이드</h2>
 <div class="about-box">
-<p class="ab-body" style="white-space:pre-line">상일동 하수구막힘 예방 방법이에요.
+<p class="ab-body" style="white-space:pre-line">이곳 하수구막힘 예방 방법이에요.
 
 ① 기름을 배수구에 직접 버리지 마세요 — 막힘의 60% 원인이에요
 ② 욕실 배수구 필터를 주 1회 청소하세요
@@ -247,7 +275,7 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 
 초기 처리가 비용과 시간을 절약해요.</p>
 </div>
-<div class="sl">CASES</div><h2 class="st">상일동 하수구막힘 핵심 정보</h2><div class="about-box"><p class="ab-body" style="white-space:pre-line">상일동 15년 차 빌라 하수구 역류 해결. 공용 배관에 슬러지가 쌓여 1층까지 역류했어요. 고압세척으로 40분 만에 정상화했어요.</p></div>
+<div class="sl">CASES</div><h2 class="st">상일동 하수구막힘 핵심 정보</h2><div class="about-box"><p class="ab-body" style="white-space:pre-line">이 동네 15년 차 빌라 하수구 역류 해결. 공용 배관에 슬러지가 쌓여 1층까지 역류했어요. 고압세척으로 40분 만에 정상화했어요.</p></div>
 <div class="sl">NEARBY</div><h2 class="st">인근 지역 바로가기</h2>
   <div class="nearby"><a href="/drain/amsa/">암사동 하수구 뚫음</a><a href="/drain/seongnae/">성내동 하수구 배수 불량</a><a href="/drain/cheonho/">천호동 배수 불량</a><a href="/drain/gildong/">길동 배수구 막힘</a><a href="/drain/dunchon/">둔촌동 하수구 배관 폐색</a><a href="/drain/myeongil/">명일동 하수도 막힘</a><a href="/drain/godeok/">고덕동 하수도 막힘</a><a href="/drain/gangil/">강일동 하수구 뚫음</a></div>
 <div class="faq-section" style="max-width:1000px;margin:0 auto;padding:0 20px 36px;">
@@ -255,23 +283,23 @@ footer{background:var(--pd);color:#fff;padding:36px 20px;text-align:center;font-
 <h2 class="st">상일동 하수구막힘 자주 묻는 질문</h2>
 <div style="background:#fff;border:1px solid #FFD9B3;border-radius:12px;padding:4px 20px;">
 <div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 상일동 하수구 냄새 원인이 뭔가요?</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 이 지역 하수구 냄새 원인이 뭔가요?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 트랩 봉수 증발이나 배관 내부 오염이 원인이에요. 고압세척과 트랩 점검으로 해결할 수 있어요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 상일동 하수구막힘, 왜 자꾸 발생하나요?</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 해당 지역 하수구막힘, 왜 자꾸 발생하나요?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 기름때와 음식물 찌꺼기가 배관 내벽에 쌓이면서 반복돼요. 정기 세척으로 예방할 수 있어요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 상일동 하수구 뚫는 비용은 얼마인가요?</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 이곳 하수구 뚫는 비용은 얼마인가요?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 막힘 위치와 정도에 따라 달라요. 현장 진단 후 정확한 견적을 안내드려요. 진단비는 무료예요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
 <p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 하수구 고압세척이 배관에 안전한가요?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 전문 장비로 압력을 조절해서 작업하기 때문에 배관 손상 없이 안전해요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 상일동 하수구 정기 세척 주기는?</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 이 동네 하수구 정기 세척 주기는?</p>
 <p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 주거용은 6개월~1년, 음식점 등 상업시설은 3~6개월 주기를 권장해요.</p>
 </div><div class="faq-item" style="border-bottom:1px solid #e0d5c8;padding:14px 0;">
-<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 상일동 하수구막힘 출장 시간은 얼마나 걸리나요?</p>
-<p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 상일동 기준 접수 후 30분~1시간 내 도착해요. 작업 시간은 상태에 따라 30분~2시간이에요.</p>
+<p class="faq-q" style="font-weight:700;color:#2A1500;font-size:15px;margin-bottom:6px;">Q. 이 지역 하수구막힘 출장 시간은 얼마나 걸리나요?</p>
+<p class="faq-a" style="color:#6B3A00;font-size:14px;line-height:1.7;">A. 해당 지역 기준 접수 후 30분~1시간 내 도착해요. 작업 시간은 상태에 따라 30분~2시간이에요.</p>
 </div></div>
 </div>
 </div>
